@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const FetchCryptos = async () => {
+const FetchCoins = async () => {
   let data;
   const options = {
     method: 'GET',
@@ -29,4 +29,4 @@ const FetchCryptos = async () => {
   return data;
 };
 
-export default FetchCryptos;
+export default FetchCoins;
