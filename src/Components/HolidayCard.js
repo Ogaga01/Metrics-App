@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../scss/HolidayCard.css';
 import { useSelector } from 'react-redux';
 import { AiOutlineGlobal } from 'react-icons/ai';
 

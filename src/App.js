@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './Components/Pages/Home';
+import Country from './Components/Pages/Country';
 import './App.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/:country_code" element={<Country />} />
       </Routes>
       <Footer />
     </>
