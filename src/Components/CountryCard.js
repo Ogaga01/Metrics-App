@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
-import { FetchCountry } from '../../redux/country/country';
-import Form from './Form';
+import { FetchCountry } from '../Redux/Country';
+import Form from './Forms';
 
 const CountryTiles = () => {
   const country = useSelector((state) => state.country);
