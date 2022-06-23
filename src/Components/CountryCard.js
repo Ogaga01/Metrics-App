@@ -20,7 +20,9 @@ const CountryTiles = () => {
 
   const searchHandler = (n) => {
     const countries = n.target.value;
-    const list = country.filter((e) => e.countryName.includes(countries.toLowerCase()));
+    const list = country.filter((e) => e.countryName
+      .toLowerCase()
+      .startsWith(countries.toLowerCase()));
     setDisplayedCountries(list);
   };
 
