@@ -20,7 +20,9 @@ const CountryTiles = () => {
 
   const searchHandler = (n) => {
     const countries = n.target.value;
-    const list = country.filter((e) => e.countryName.includes(countries));
+    const list = country.filter((e) => e.countryName
+      .toLowerCase()
+      .startsWith(countries.toLowerCase()));
     setDisplayedCountries(list);
   };
 
@@ -40,6 +42,10 @@ const CountryTiles = () => {
             </NavLink>
             <p className="country-name">{name}</p>
             <p className="country-code">{id}</p>
+            <p className="country-name">
+              Total holidays:
+              5+
+            </p>
             {/* <p className="fa-icons-right">{countHoliday(id)}</p> */}
           </li>
         ))}
