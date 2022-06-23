@@ -1,6 +1,6 @@
 import React from 'react';
-import CountryList from '../CountryList';
-import GlobalHoliday from '../GlobalHoliday';
+import CountryList from '../Components/CountryList';
+import GlobalHoliday from '../Components/GlobalHoliday';
 
 const Home = () => (
   <section className="">
