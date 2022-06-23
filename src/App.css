@@ -1,39 +1,255 @@
-.App {
-  text-align: center;
+body {
+  background-color: #ec4c8b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  margin-top: 48px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.country-list {
+  display: grid;
+  align-items: center;
+  background-color: #f85092;
+  grid-template-columns: auto auto;
+  margin: 0;
+  padding-left: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.country-list li {
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+}
+
+.country-list li:nth-child(4n-1),
+.country-list li:nth-child(4n-2) {
+  background: #cf4278;
+}
+
+.city-index {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+}
+
+.fa-icons-right,
+.country-code {
+  color: rgb(20, 45, 64);
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+.country-name {
+  color: rgb(255, 255, 255);
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+header {
+  top: 0;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  background-color: #ec4c8b;
+  padding: 10px 0;
+}
+
+span {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-menu {
+  margin-left: 10px;
+  gap: 5px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-icons {
+  margin-right: 20px;
+  gap: 25px;
+}
+
+.fa-icons {
+  color: white;
+  cursor: pointer;
+}
+
+.country-container {
+  margin-left: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #ec4c8b;
+  color: #121212;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+a {
+  margin-left: 1rem;
+  color: #121212;
+}
+
+img {
+  margin-left: 1rem;
+  height: 1rem;
+  width: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #e8e8e8;
+    color: #121212;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 
-  to {
-    transform: rotate(360deg);
+  a {
+    margin-left: 1rem;
+    color: #121212;
   }
+
+  img {
+    margin-left: 1rem;
+    height: 1rem;
+    width: 1px;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #131011;
+}
+
+p {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+input {
+  background-color: transparent;
+  height: 40px;
+  width: 100%;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  border-color: #cf4278;
+  padding-left: 10px;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+.global-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .globe {
+  background-color: #dd4983;
+  width: 50%;
+}
+
+.globe-icon {
+  color: #cf4278;
+  width: 100%;
+  display: block;
+} */
+
+.project-title {
+  background-color: #cf4278;
+  width: 50%;
+}
+
+.project-title p {
+  color: rgb(20, 45, 64);
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.holiday-container {
+  flex-direction: column;
+  margin: 0;
+}
+
+.holiday-list {
+  flex-direction: column;
+  background-color: #f85092;
+  padding-left: 0;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+.holiday-list li:nth-child(2n) {
+  background: #cf4278;
+}
+
+.country-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.globe {
+  background-color: #dd4983;
+  width: 50%;
+}
+
+.globe-icon {
+  color: #cf4278;
+  width: 100%;
+  display: block;
+}
+
+.holiday-title {
+  background-color: #cf4278;
+  width: 50%;
+}
+
+.holiday-title p {
+  font-weight: bold;
+  color: rgb(20, 45, 64);
+}
+
+.holiday-name {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(20, 45, 64);
+}
+
+.holiday-date {
+  color: rgb(231, 231, 208);
 }
