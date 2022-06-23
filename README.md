@@ -2,7 +2,7 @@
 
 # Metric-Holiday App
 
-> Metric Holiday App is a single page page app that allows users check the national Holidays for all countries around the around.
+> Metric Holiday App is a single page page app that allows users check the national Holidays for all countries around the World.
 
 
 ## Built With
