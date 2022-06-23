@@ -1,17 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { BiMicrophone } from 'react-icons/bi';
-import { RiSettings5Line } from 'react-icons/ri';
+import { NavLink } from 'react-router-dom';
+import { FaAngleLeft, FaMicrophone, FaCog } from 'react-icons/fa';
 
 const Header = () => (
-  <nav>
-    <Link to="/">Home</Link>
-    <h2>Metric App</h2>
-    <div>
-      <BiMicrophone />
-      <RiSettings5Line />
+  <header className="d-flex">
+    <div className="nav-menu d-flex">
+      <NavLink to="/" className="">
+        <FaAngleLeft className="fa-icons" />
+      </NavLink>
+      <span>HOME</span>
     </div>
-  </nav>
+    <div className="nav-icons d-flex">
+      <FaMicrophone className="fa-icons" />
+      <FaCog className="fa-icons" />
+    </div>
+  </header>
 );
 
 export default Header;
