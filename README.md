@@ -18,6 +18,9 @@
 
 [Live Demo Link](https://stunning-cajeta-a3ec0e.netlify.app)
 
+## Presentation Video
+[Watch me present the project](https://www.loom.com/share/5e05ab6ea3ae45f1b932142e34fbced8)
+
 
 ## Getting Started
 
